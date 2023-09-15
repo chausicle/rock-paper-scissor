@@ -1,11 +1,18 @@
-document.addEventListener("DOMContentLoaded", game)
+document.addEventListener("DOMContentLoaded", game);
+
+function playerSelection(e) {
+  const playerChoice = e.target.getAttribute("id");
+  const computerChoice = getComputerChoice();
+  const result = playRound(playerChoice, computerChoice);
+
+  console.log("PlayerChoice: ", playerChoice, " - ComputerChoice: ", computerChoice);
+  console.log("RESULT: ", result)
+}
 
 function game() {
-  for (let i = 1; i <= 5; i++) {
-    let playerSelection = prompt("Rock, Paper, or Scissor?").toLowerCase()
-    let computerSelection = getComputerChoice()
+  const rpsButtons = document.querySelectorAll("button");
 
-    console.log(`Player: ${playerSelection} - Computer: ${computerSelection}`)
-    console.log(playRound(playerSelection, computerSelection), "\n")
-  }
+  rpsButtons.forEach(choice => {
+    choice.addEventListener("click", playerSelection)
+  });
 }
