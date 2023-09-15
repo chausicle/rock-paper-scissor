@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Rock Paper Scissor</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Rock Paper Scissor</title>
+</head>
+
+<body>
+  <h1>ROCK PAPER SCISSOR</h1>
+  <section id="players">
+    <div id="player">
+      <h2>PLAYER</h2>
+    </div>
+    <div>VS</div>
+    <div id="computer">
+      <h2>COMPUTER</h2>
+    </div>
+  </section>
+  <section id="results">
+    <div id="playerResult"></div>
+    <div id="computerResult"></div>
+    <p id="description"></p>
+  </section>
+  <section id="choices">
     <button id="rock">ROCK</button>
     <button id="paper">PAPER</button>
     <button id="scissor">SCISSOR</button>
-    <script src="game.js"></script>
-    <script src="playRound.js"></script>
-    <script src="getComputerChoice.js"></script>
-  </body>
+  </section>
+  <script src="game.js"></script>
+  <script src="playRound.js"></script>
+  <script src="getComputerChoice.js"></script>
+</body>
+
 </html>
