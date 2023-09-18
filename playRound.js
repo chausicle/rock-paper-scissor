@@ -20,7 +20,7 @@ function playRound(playerSelection, computerSelection) {
       if (computerSelection === "rock") {
         return ["FAILURE", "SUCCESSFUL", "YOU LOSE... Scissor sends a flurry of slashes but quickly dulls out from Rock's impenetrable defense"];
       } else if (computerSelection === "paper") {
-        return ["SUCCESSFUL", "FAILURE", `YOU WIN! Before Paper could fold in defeat, Scissor chants the words "you're already dead", splitting Paper into two clean halves`];
+        return ["SUCCESSFUL", "FAILURE", `YOU WIN! Before Paper could fold in defeat, it splits into two clean halves`];
       } else {
         return ["DRAW", "DRAW", "DRAW"];
       }
