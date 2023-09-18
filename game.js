@@ -3,10 +3,15 @@ document.addEventListener("DOMContentLoaded", game);
 function playerSelection(e) {
   const playerChoice = e.target.getAttribute("id");
   const computerChoice = getComputerChoice();
-  const result = playRound(playerChoice, computerChoice);
+  const playerResult = document.querySelector("div#playerResult")
+  const computerResult = document.querySelector("div#computerResult")
+  const description = document.querySelector("p#description");
+  const [player, computer, result] = playRound(playerChoice, computerChoice);
 
   console.log("PlayerChoice: ", playerChoice, " - ComputerChoice: ", computerChoice);
-  console.log("RESULT: ", result)
+  playerResult.textContent = player;
+  computerResult.textContent = computer;
+  description.textContent = result;
 }
 
 function game() {
