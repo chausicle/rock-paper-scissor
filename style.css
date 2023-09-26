@@ -9,6 +9,9 @@ body {
 
 div#player {
   flex: 1 1 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 #players div:nth-child(2) {
@@ -17,4 +20,14 @@ div#player {
 
 div#computer {
   flex: 1 1 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 5px;
+  min-height: 300px;
+  min-width: 200px;
 }
