@@ -26,8 +26,19 @@ div#computer {
 }
 
 .card {
-  border: 1px solid black;
-  border-radius: 5px;
+  /* border: 1px solid black; */
+  border: 15px solid gainsboro;
+  /* border-radius: 5px; */
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 0px black;
   min-height: 300px;
   min-width: 200px;
+}
+
+.result {
+  margin-top: 18px;
+}
+
+button.card {
+  margin: 5px 5px;
 }
