@@ -1,3 +1,20 @@
 body {
   text-align: center;
 }
+
+#players {
+  display: flex;
+  /* justify-content: center; */
+}
+
+div#player {
+  flex: 1 1 500px;
+}
+
+#players div:nth-child(2) {
+  margin: auto 0;
+}
+
+div#computer {
+  flex: 1 1 500px;
+}
