@@ -39,6 +39,23 @@ div#computer {
   margin-top: 18px;
 }
 
+#results {
+  display: flex;
+  justify-content: center;
+}
+
+#description {
+  border: 10px solid gainsboro;
+  border-radius: 5px;
+  display: flex;
+  flex: 1 1 500px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  min-width: 500px;
+  max-width: 800px;
+}
+
 button.card {
   margin: 5px 5px;
 }
