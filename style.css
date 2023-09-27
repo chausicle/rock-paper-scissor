@@ -26,6 +26,14 @@ div#computer {
   flex-direction: column;
 }
 
+#player > div.card {
+  font-size: 5em;
+}
+
+#computer > div.card {
+  font-size: 5em;
+}
+
 .card {
   border: 15px solid gainsboro;
   border-radius: 10px;
@@ -62,5 +70,10 @@ div.card {
 }
 
 button.card {
+  font-size: 5em;
   margin: 5px 5px;
+}
+
+button.card::after {
+  content: "\1F3FC";
 }
