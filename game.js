@@ -31,7 +31,8 @@ function playerSelection(e) {
   computerResult.textContent = computer;
   description.textContent = result;
   
-  decideFate(Number(playerCount.textContent), Number(computerCount.textContent))
+  showPlayersChoice(playerChoice, computerChoice);
+  decideFate(Number(playerCount.textContent), Number(computerCount.textContent));
 }
 
 function game() {
