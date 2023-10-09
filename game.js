@@ -39,6 +39,7 @@ function game() {
   const rpsButtons = document.querySelectorAll("button");
 
   rpsButtons.forEach(choice => {
-    choice.addEventListener("click", playerSelection)
+    choice.textContent += "🏼";
+    choice.addEventListener("click", playerSelection);
   });
 }
