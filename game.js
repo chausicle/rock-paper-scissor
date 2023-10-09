@@ -15,6 +15,10 @@ function decideFate(playerCount, computerCount) {
 }
 
 function playerSelection(e) {
+  let timer;
+  clearTimeout(timer);
+  timer = setTimeout(function() {}, 300);
+
   const playerChoice = e.target.getAttribute("id");
   const computerChoice = getComputerChoice();
   const playerCount = document.querySelector("#playerCount");
