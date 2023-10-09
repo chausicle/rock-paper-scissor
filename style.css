@@ -73,7 +73,3 @@ button.card {
   font-size: 5em;
   margin: 5px 5px;
 }
-
-button.card::after {
-  content: "\1F3FC";
-}
